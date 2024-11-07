@@ -46,7 +46,7 @@ export default function SignupForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4  block gap-1 justify-center text-center w-full p-1 ">
       <input type="text" name="username" placeholder="Username" onChange={handleInputChange} required className="input" />
       <input type="email" name="email" placeholder="Email" onChange={handleInputChange} required className="input" />
       <input type="password" name="password" placeholder="Password" onChange={handleInputChange} required className="input" />

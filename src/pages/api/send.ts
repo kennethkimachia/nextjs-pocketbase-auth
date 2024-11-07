@@ -13,7 +13,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       from: 'EMBS <donotreply@e-bms.org>',
       to: ['kimachiakenneth@gmail.com'],
       subject: 'Hello world',
-      react: EmailTemplate({ username: 'John' }),
+      react: EmailTemplate({ username}),
     });
     res.status(200).json(data);
     
